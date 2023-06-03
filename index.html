@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi');
+
+        body {
+            color: black;
+            /* background-color: black; */
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            font-size: 5rem;
+            font-family: 'Baloo Thambi', cursive;
+        }
+
+        .container {
+            animation: grow 4s ease-in-out infinite;
+        }
+
+        @keyframes grow {
+
+            10%,
+            0% {
+                color: white;
+                text-shadow: 0 0 12px red, 0 0 52px red, 0 0 102px red;
+            }
+
+            20%,
+            70% {
+                color: black;
+                text-shadow: none;
+            }
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span>A</span>
+        <span>B</span>
+        <span>B</span>
+        <span>D</span>
+        <span>M</span>
+        <span>L</span>
+    </div>
+</body>
+
+</html>
